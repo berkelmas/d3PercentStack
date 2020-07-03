@@ -2,7 +2,7 @@ import * as d3 from "d3";
 import { mainData, colorsData } from "./data/data";
 const width = 900;
 
-const constructPercentStack = (selector) => {
+export const constructPercentStack = (selector) => {
   const mainSvg = d3
     .select(selector)
     .append("svg")
@@ -83,5 +83,3 @@ const constructPercentStack = (selector) => {
     .attr("fill", "#484848")
     .attr("font-size", "12px");
 };
-
-constructPercentStack("#container");
