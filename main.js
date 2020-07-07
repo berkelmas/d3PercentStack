@@ -54,11 +54,9 @@ export const constructPercentStack = (selector) => {
     .transition()
     .duration(1000)
     .attr("x", function (d) {
-      console.log("x", scaler(d[0]));
       return scaler(d[0]);
     })
     .attr("width", function (d) {
-      console.log("width", scaler(d[1] - d[0]));
       return scaler(d[1] - d[0]);
     });
 
